@@ -1,6 +1,6 @@
 -- Display report for employees who have sold at least 5 cars
 
-select e.employeeId,e.firstName,e.lastName,count(salesId) as carsSold,soldDate
+select e.employeeId,e.firstName,e.lastName,count(*) as carsSold
 from sales s
 join employee e
 on s.employeeId=e.employeeId
